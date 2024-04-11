@@ -1,0 +1,145 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --background-blue: hsl(217, 54%, 11%);
+    --card-blue: hsl(216, 50%, 16%);
+    --line-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    height: 100vh;
+    /* overflow-y: hidden; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    background-color: var(--background-blue);
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.card {
+    width: min-content;
+    padding: 1.5rem;
+    background-color: var(--card-blue);
+    border-radius: 1rem;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container .main-image {
+    width: 20rem;
+    border-radius: .7rem;
+}
+
+.image-container .hover-icon {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ffff6c;
+    border-radius: .7rem;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+
+.image-container .hover-icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image-container .hover-icon>img:hover {
+    opacity: 1;
+}
+
+.card-body a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    margin: 1rem 0;
+    transition: color 200ms ease-in-out;
+}
+
+
+.card-body p {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.eth {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth-price,
+.eth-time-remaining {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .4rem;
+}
+
+.eth-price img,
+.eth-time-remaining img {
+    height: 1.15rem
+}
+
+.eth-price p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: cyan;
+    margin: 0.5rem 0;
+}
+
+.eth-time-remaining p {
+    margin: 0.5rem 0;
+}
+
+.card hr {
+    border: 0;
+    height: 0;
+    border-bottom: 0.1px solid var(--line-blue);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.creator p {
+    color: var(--soft-blue);
+    margin: 1rem 0;
+}
+
+.creator p .creator-name {
+    color: var(--white);
+    font-weight: 400;
+    transition: color 200ms ease-in-out;
+}
+
+.creator img {
+    height: 2.2rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.card-body a:hover,
+.creator p .creator-name:hover {
+    color: var(--cyan);
+}
