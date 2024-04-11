@@ -39,15 +39,15 @@ a {
 }
 
 .image-container .main-image {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     border-radius: .7rem;
 }
 
 .image-container .hover-icon {
     position: absolute;
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     display: flex;
     justify-content: center;
     align-items: center;
