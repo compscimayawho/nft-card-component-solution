@@ -151,3 +151,65 @@ a {
 .creator p .creator-name:hover {
     color: var(--cyan);
 }
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+    .card {
+        padding: 1.3rem;
+    }
+
+    .image-container .main-image {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .image-container .hover-icon {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .card-body a {
+        font-size: 1.3rem;
+        margin: 1rem 0;
+    }
+
+    .card-body p {
+        font-size: 1rem;
+        margin: 0.7rem 0;
+    }
+
+    .eth-price,
+    .eth-time-remaining {
+
+        gap: .3rem;
+    }
+
+    .eth-price img,
+    .eth-time-remaining img {
+        height: 1rem;
+    }
+
+    .eth-price p {
+        font-size: 0.9rem;
+    }
+
+    .eth-time-remaining p {
+        font-size: 1rem;
+    }
+
+    .card hr {
+        margin: 0.5rem 0rem;
+    }
+
+    .creator p {
+        font-size: 1rem;
+    }
+
+    .creator p .creator-name {
+        font-size: 1.1rem;
+    }
+
+    .creator img {
+        height: 1.8rem;
+    }
+}
