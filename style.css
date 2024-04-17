@@ -9,7 +9,7 @@
 
 body {
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ a {
 
 .card {
     width: min-content;
-    padding: 1.3rem;
+    padding: 1rem;
     background-color: var(--card-blue);
     border-radius: 1rem;
 }
@@ -39,15 +39,15 @@ a {
 }
 
 .image-container .main-image {
-    width: 16rem;
-    height: 16rem;
+    width: 13rem;
+    height: 13rem;
     border-radius: .7rem;
 }
 
 .image-container .hover-icon {
     position: absolute;
-    width: 16rem;
-    height: 16rem;
+    width: 13rem;
+    height: 13rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,10 +69,10 @@ a {
 }
 
 .card-body a {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
     display: block;
-    margin: 1rem 0;
+    margin: 0.7rem 0;
     transition: color 200ms ease-in-out;
 }
 
@@ -80,12 +80,14 @@ a {
 .card-body p {
     color: var(--soft-blue);
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
 }
 
 .eth {
     display: flex;
     justify-content: space-between;
+    margin: 0;
 }
 
 .eth-price,
@@ -93,24 +95,24 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: .3rem;
+    gap: .25rem;
 }
 
 .eth-price img,
 .eth-time-remaining img {
-    height: 1rem;
+    height: 0.7rem;
 }
 
 .eth-price p {
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     letter-spacing: .05rem;
     color: cyan;
     margin: 0.5rem 0;
 }
 
 .eth-time-remaining p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0.5rem 0;
 }
 
@@ -118,6 +120,7 @@ a {
     border: 0;
     height: 0;
     border-bottom: 0.1px solid var(--line-blue);
+    margin: 0.3rem 0rem;
 }
 
 .creator {
@@ -128,18 +131,18 @@ a {
 
 .creator p {
     color: var(--soft-blue);
-    font-size: 1rem;
+    font-size: 0.7rem;
     /* margin: 1rem 0; */
 }
 
 .creator p .creator-name {
     color: var(--white);
-    font-size: 1.1rem;
+    font-size: 0.86rem;
     transition: color 200ms ease-in-out;
 }
 
 .creator img {
-    height: 1.8rem;
+    height: 1.5rem;
     border: 1px solid var(--white);
     border-radius: 50%;
 }
