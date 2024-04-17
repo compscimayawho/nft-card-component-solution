@@ -9,7 +9,7 @@
 
 body {
     height: 100vh;
-    overflow-y: hidden;
+    /* overflow: hidden; */
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -39,8 +39,8 @@ a {
 }
 
 .image-container .main-image {
-    width: 18rem;
-    height: 17rem;
+    width: 16rem;
+    height: 16rem;
     border-radius: .7rem;
 }
 
@@ -69,7 +69,7 @@ a {
 }
 
 .card-body a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     display: block;
     margin: 1rem 0;
@@ -80,6 +80,7 @@ a {
 .card-body p {
     color: var(--soft-blue);
     font-weight: 300;
+    font-size: 1rem;
 }
 
 .eth {
@@ -122,22 +123,23 @@ a {
 .creator {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.7rem;
 }
 
 .creator p {
     color: var(--soft-blue);
-    margin: 1rem 0;
+    font-size: 1rem;
+    /* margin: 1rem 0; */
 }
 
 .creator p .creator-name {
     color: var(--white);
-    font-weight: 400;
+    font-size: 1.1rem;
     transition: color 200ms ease-in-out;
 }
 
 .creator img {
-    height: 2rem;
+    height: 1.8rem;
     border: 1px solid var(--white);
     border-radius: 50%;
 }
